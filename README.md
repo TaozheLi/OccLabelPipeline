@@ -1,8 +1,9 @@
-# OCC Label Pipeline
+# OCC Label Generation
+## From lidar point cloud to Occ label
 
 **English** | [简体中文](README.zh-CN.md)
 
-A LiDAR-first pipeline for generating Occ3D/nuScenes-style semantic occupancy pseudo labels. Each scan is segmented, static geometry is reconstructed in a SLAM world frame, and tracked dynamic objects are merged **last** so static KNN and cleanup cannot change their classes.
+A LiDAR-Only pipeline for generating Occ3D/nuScenes-style semantic occupancy pseudo labels. Each scan is segmented, static geometry is reconstructed in a SLAM world frame, and tracked dynamic objects are merged **last** so static KNN and cleanup cannot change their classes.
 
 ```mermaid
 flowchart LR
