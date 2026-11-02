@@ -1,0 +1,9 @@
+{
+  "test": "clean three-frame real-PCD integration",
+  "stage": "complete",
+  "frames": 3,
+  "dynamic_overwritten_voxels": 0,
+  "unknown_ego_invariants_passed": true,
+  "camera_mask_available": false,
+  "weights_and_data_distributed": false
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "occ-label-pipeline"
+version = "0.1.0"
+description = "LiDAR-first semantic occupancy generation with dynamic-last merging"
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+dynamic = ["dependencies"]
+
+[project.scripts]
+occ-label = "occ_label_pipeline.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["occ_label_pipeline*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
